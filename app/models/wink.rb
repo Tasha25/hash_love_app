@@ -1,3 +1,7 @@
 class Wink < ActiveRecord::Base
-  attr_accessible :winked_at_id, :winker_id
+  attr_accessible :user_id, :winked_at_id
+  belongs_to :user
+
+
+
 end
